@@ -20,8 +20,12 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
-        server-dir: ./
+        protocol: ftps
+        server-dir: /
         exclude: |
           **/.git*
           **/.git*/**
           **/node_modules/**
+          **/.gitignore
+          **/prepros-6.config
+          **/README.txt
